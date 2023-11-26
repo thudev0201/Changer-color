@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Change Font Size",
+    "version": "1.0",
+    "description": "Change the font size of web pages",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
